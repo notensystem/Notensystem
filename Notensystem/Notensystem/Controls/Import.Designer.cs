@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Import));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.label_Path = new System.Windows.Forms.Label();
@@ -61,12 +62,12 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(67, 3);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(68, 3);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(362, 111);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(361, 111);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
             // label_Path
@@ -76,7 +77,7 @@
             this.label_Path.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_Path.Location = new System.Drawing.Point(3, 131);
             this.label_Path.Name = "label_Path";
-            this.label_Path.Size = new System.Drawing.Size(58, 19);
+            this.label_Path.Size = new System.Drawing.Size(59, 19);
             this.label_Path.TabIndex = 1;
             this.label_Path.Text = "Pfad:";
             this.label_Path.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -89,12 +90,12 @@
             this.tableLayoutPanel3.Controls.Add(this.textBoxPath, 0, 0);
             this.tableLayoutPanel3.Controls.Add(this.button_OpenFileDialog, 1, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(67, 120);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(68, 120);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 41F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(362, 41);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(361, 41);
             this.tableLayoutPanel3.TabIndex = 2;
             // 
             // textBoxPath
@@ -102,13 +103,13 @@
             this.textBoxPath.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.textBoxPath.Location = new System.Drawing.Point(3, 9);
             this.textBoxPath.Name = "textBoxPath";
-            this.textBoxPath.Size = new System.Drawing.Size(282, 22);
+            this.textBoxPath.Size = new System.Drawing.Size(281, 22);
             this.textBoxPath.TabIndex = 1;
             // 
             // button_OpenFileDialog
             // 
             this.button_OpenFileDialog.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.button_OpenFileDialog.Location = new System.Drawing.Point(291, 9);
+            this.button_OpenFileDialog.Location = new System.Drawing.Point(290, 9);
             this.button_OpenFileDialog.Name = "button_OpenFileDialog";
             this.button_OpenFileDialog.Size = new System.Drawing.Size(36, 22);
             this.button_OpenFileDialog.TabIndex = 0;
@@ -122,6 +123,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(432, 192);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(448, 230);
             this.MinimizeBox = false;
