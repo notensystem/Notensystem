@@ -26,10 +26,10 @@ namespace Notensystem.Controls
             OpenFileDialog openFileDialog = new OpenFileDialog();
 
             // Set filter options and filter index.
-            openFileDialog.Filter = "Text Files (.csv)|*.csv";
+            openFileDialog.Filter = "Excel Files (.csv)|*.csv";
             openFileDialog.FilterIndex = 1;
 
-            openFileDialog.Multiselect = true;
+            openFileDialog.Multiselect = false;
 
             // Call the ShowDialog method to show the dialog box.
            openFileDialog.ShowDialog();
