@@ -60,6 +60,12 @@
     <Compile Include="Controls\EvaluationControl.Designer.cs">
       <DependentUpon>EvaluationControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\Import.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Import.Designer.cs">
+      <DependentUpon>Import.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\PreferencesDialog.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +104,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\EvaluationControl.resx">
       <DependentUpon>EvaluationControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Import.resx">
+      <DependentUpon>Import.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>

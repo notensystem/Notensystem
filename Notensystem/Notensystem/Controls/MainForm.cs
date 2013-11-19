@@ -19,6 +19,7 @@ namespace Notensystem.Controls
         private PreferencesDialog preferencesDialog;
         private MySqlWrapper wrapper;
         private ViewModel viewModel;
+        private Import importWindow;
 
         private const string YearKey = "YearNode";
         private const string Cycle1Key = "Cycle1";
@@ -55,7 +56,6 @@ namespace Notensystem.Controls
         {
             //connection = new DatabaseConnection("192.168.28.120", 3306, "notensystem", "admin", "admin");
             connection = DatabaseConnection.Read();
-            //connection.Write();
             TryConnect();
             Translate();
             base.OnLoad(e);
@@ -212,6 +212,19 @@ namespace Notensystem.Controls
                 preferencesDialog = new PreferencesDialog();
             }
             preferencesDialog.ShowDialog();
+        }
+
+        private void importToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            if (importWindow == null)
+            {
+                importWindow = new Import();
+                importWindow.StartPosition = FormStartPosition.CenterParent;
+            }
+
+            importWindow.StartPosition = FormStartPosition.CenterParent;
+            importWindow.ShowDialog();
         }
     }
 }

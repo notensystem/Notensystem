@@ -44,6 +44,7 @@
             this.panelPlaceHolder = new System.Windows.Forms.Panel();
             this.worker = new System.ComponentModel.BackgroundWorker();
             this.environmentBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.importToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel.SuspendLayout();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
@@ -88,7 +89,8 @@
             // itemFile
             // 
             this.itemFile.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.abcToolStripMenuItem});
+            this.abcToolStripMenuItem,
+            this.importToolStripMenuItem});
             this.itemFile.Name = "itemFile";
             this.itemFile.Size = new System.Drawing.Size(37, 20);
             this.itemFile.Text = "File";
@@ -96,7 +98,7 @@
             // abcToolStripMenuItem
             // 
             this.abcToolStripMenuItem.Name = "abcToolStripMenuItem";
-            this.abcToolStripMenuItem.Size = new System.Drawing.Size(93, 22);
+            this.abcToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.abcToolStripMenuItem.Text = "abc";
             this.abcToolStripMenuItem.Click += new System.EventHandler(this.abcToolStripMenuItem_Click);
             // 
@@ -119,7 +121,7 @@
             this.itemPreferences.BackColor = System.Drawing.Color.White;
             this.itemPreferences.Image = global::Notensystem.Properties.Resources.preferences;
             this.itemPreferences.Name = "itemPreferences";
-            this.itemPreferences.Size = new System.Drawing.Size(152, 22);
+            this.itemPreferences.Size = new System.Drawing.Size(147, 22);
             this.itemPreferences.Text = "Preferences ...";
             this.itemPreferences.Click += new System.EventHandler(this.ItemPreferences_OnClick);
             // 
@@ -182,6 +184,13 @@
             // 
             this.environmentBindingSource.DataSource = typeof(Notensystem.Core.ApplicationEnvironment);
             // 
+            // importToolStripMenuItem
+            // 
+            this.importToolStripMenuItem.Name = "importToolStripMenuItem";
+            this.importToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.importToolStripMenuItem.Text = "Import";
+            this.importToolStripMenuItem.Click += new System.EventHandler(this.importToolStripMenuItem_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -218,5 +227,6 @@
         private System.ComponentModel.BackgroundWorker worker;
         private System.Windows.Forms.ToolStripMenuItem itemSettings;
         private System.Windows.Forms.ToolStripMenuItem itemPreferences;
+        private System.Windows.Forms.ToolStripMenuItem importToolStripMenuItem;
     }
 }
